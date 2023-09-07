@@ -25,7 +25,7 @@ class PDFReader:
         for barcode in barcodes:
             barcode_data_list.append(barcode.data.decode('utf-8'))
 
-        return barcode_data_list if barcode_data_list else "incomplete data"
+        return barcode_data_list if barcode_data_list else "value not found!"
 
     def get_pdf_data(self, file_path):
 
